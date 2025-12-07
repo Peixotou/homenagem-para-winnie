@@ -1,0 +1,1092 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>💖 Homenagem à Professora Winnie - 9º Ano B 2025</title>
+    <style>
+        /* RESET E CONFIGURAÇÕES */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        :root {
+            --rosa: #ff4d8d;
+            --rosa-claro: #ff80ab;
+            --azul: #4d8cff;
+            --azul-claro: #80b3ff;
+            --verde: #4CAF50;
+            --amarelo: #FFD700;
+            --branco: #ffffff;
+            --cinza: #f5f5f5;
+            --cinza-escuro: #333;
+        }
+
+        body {
+            font-family: 'Arial', sans-serif;
+            background: linear-gradient(135deg, var(--azul), var(--rosa));
+            color: var(--branco);
+            line-height: 1.6;
+            min-height: 100vh;
+            padding-bottom: 60px; /* Espaço para o crédito */
+        }
+
+        /* CABEÇALHO */
+        .cabecalho {
+            background: rgba(0,0,0,0.7);
+            padding: 40px 20px;
+            text-align: center;
+            backdrop-filter: blur(10px);
+            border-bottom: 3px solid var(--amarelo);
+        }
+
+        .titulo {
+            font-size: 3em;
+            margin-bottom: 20px;
+            text-shadow: 0 3px 10px rgba(0,0,0,0.3);
+        }
+
+        .subtitulo {
+            font-size: 1.5em;
+            opacity: 0.9;
+            margin-bottom: 15px;
+        }
+
+        .badge-turma {
+            display: inline-block;
+            background: linear-gradient(135deg, var(--verde), var(--amarelo));
+            color: white;
+            padding: 12px 30px;
+            border-radius: 25px;
+            font-weight: bold;
+            font-size: 1.2em;
+            margin: 10px;
+        }
+
+        /* ÁRVORE */
+        .arvore-container {
+            margin: 40px auto;
+            text-align: center;
+            padding: 20px;
+        }
+
+        .arvore-titulo {
+            font-size: 2.5em;
+            margin-bottom: 30px;
+            color: var(--amarelo);
+        }
+
+        .galeria-frutas {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 25px;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        .fruta {
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            background: linear-gradient(135deg, var(--rosa), var(--rosa-claro));
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 2em;
+            font-weight: bold;
+            cursor: pointer;
+            transition: all 0.3s;
+            border: 4px solid white;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+        }
+
+        .fruta:hover {
+            transform: scale(1.2) rotate(15deg);
+            box-shadow: 0 10px 25px rgba(0,0,0,0.3);
+        }
+
+        .fruta-vazia {
+            background: linear-gradient(135deg, var(--azul), var(--azul-claro));
+            color: white;
+        }
+
+        .fruta-com-foto {
+            background-size: cover;
+            background-position: center;
+            color: white;
+            text-shadow: 0 2px 5px rgba(0,0,0,0.8);
+        }
+
+        /* MURAL */
+        .mural-container {
+            background: rgba(255,255,255,0.9);
+            border-radius: 20px;
+            padding: 40px 20px;
+            margin: 40px auto;
+            max-width: 1400px;
+            color: var(--cinza-escuro);
+        }
+
+        .mural-titulo {
+            color: var(--rosa);
+            font-size: 2.5em;
+            text-align: center;
+            margin-bottom: 40px;
+        }
+
+        .galeria-fotos {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+            gap: 25px;
+            margin-bottom: 40px;
+        }
+
+        .foto-item {
+            background: white;
+            border-radius: 15px;
+            overflow: hidden;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+            transition: transform 0.3s;
+        }
+
+        .foto-item:hover {
+            transform: translateY(-10px);
+        }
+
+        .foto-item img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+        }
+
+        .foto-info {
+            padding: 15px;
+        }
+
+        /* FORMULÁRIO */
+        .form-container {
+            background: rgba(255,255,255,0.9);
+            border-radius: 20px;
+            padding: 40px;
+            max-width: 800px;
+            margin: 40px auto;
+            color: var(--cinza-escuro);
+        }
+
+        .form-titulo {
+            color: var(--rosa);
+            font-size: 2em;
+            margin-bottom: 30px;
+            text-align: center;
+        }
+
+        .form-group {
+            margin-bottom: 25px;
+        }
+
+        .form-label {
+            display: block;
+            margin-bottom: 10px;
+            font-weight: bold;
+            color: var(--cinza-escuro);
+        }
+
+        .form-input {
+            width: 100%;
+            padding: 15px;
+            border: 2px solid #ddd;
+            border-radius: 10px;
+            font-size: 1em;
+        }
+
+        .form-input:focus {
+            outline: none;
+            border-color: var(--rosa);
+        }
+
+        .btn {
+            background: linear-gradient(135deg, var(--rosa), var(--azul));
+            color: white;
+            border: none;
+            padding: 18px 40px;
+            border-radius: 10px;
+            font-size: 1.2em;
+            cursor: pointer;
+            transition: all 0.3s;
+            font-weight: bold;
+            display: block;
+            width: 100%;
+            margin-top: 20px;
+        }
+
+        .btn:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+        }
+
+        .btn-pequeno {
+            padding: 10px 20px;
+            font-size: 1em;
+            width: auto;
+            display: inline-block;
+            margin-top: 0;
+        }
+
+        /* MODAL */
+        .modal {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0,0,0,0.9);
+            z-index: 1000;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .modal-content {
+            background: white;
+            border-radius: 20px;
+            padding: 40px;
+            max-width: 600px;
+            width: 90%;
+            max-height: 80vh;
+            overflow-y: auto;
+            position: relative;
+            color: var(--cinza-escuro);
+        }
+
+        .modal-fechar {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            background: var(--rosa);
+            color: white;
+            border: none;
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            font-size: 1.5em;
+            cursor: pointer;
+        }
+
+        /* PAINEL ADMIN */
+        .admin-panel {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            z-index: 100;
+        }
+
+        .admin-btn {
+            background: var(--verde);
+            color: white;
+            border: none;
+            padding: 12px 25px;
+            border-radius: 25px;
+            cursor: pointer;
+            font-weight: bold;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+        }
+
+        .admin-modal {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0,0,0,0.95);
+            z-index: 2000;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .admin-content {
+            background: white;
+            border-radius: 20px;
+            padding: 30px;
+            max-width: 900px;
+            width: 90%;
+            max-height: 80vh;
+            overflow-y: auto;
+            color: var(--cinza-escuro);
+        }
+
+        .admin-section {
+            margin-bottom: 30px;
+            padding: 20px;
+            background: var(--cinza);
+            border-radius: 10px;
+        }
+
+        .btn-excluir {
+            background: #ff4444;
+            color: white;
+            border: none;
+            padding: 8px 15px;
+            border-radius: 5px;
+            cursor: pointer;
+            margin-left: 10px;
+        }
+
+        .admin-senha {
+            margin: 20px 0;
+        }
+
+        /* UPLOAD AREA */
+        .upload-area {
+            border: 2px dashed #ddd;
+            border-radius: 10px;
+            padding: 30px;
+            text-align: center;
+            cursor: pointer;
+            transition: all 0.3s;
+            margin-bottom: 20px;
+        }
+
+        .upload-area:hover {
+            border-color: var(--rosa);
+            background: #f9f9f9;
+        }
+
+        /* MENSAGENS DE SUCESSO */
+        .mensagem-sucesso {
+            background: linear-gradient(135deg, #4CAF50, #81C784);
+            color: white;
+            padding: 25px;
+            border-radius: 15px;
+            text-align: center;
+            margin: 20px 0;
+            display: none;
+        }
+
+        .mensagem-sucesso.mostrar {
+            display: block;
+            animation: aparecer 0.5s ease;
+        }
+
+        /* CRÉDITO */
+        .credito {
+            text-align: center;
+            margin-top: 40px;
+            padding: 20px;
+            color: white;
+            font-size: 0.9em;
+            opacity: 0.8;
+        }
+
+        .credito a {
+            color: var(--amarelo);
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .credito a:hover {
+            text-decoration: underline;
+        }
+
+        @keyframes aparecer {
+            from { opacity: 0; transform: translateY(-10px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        /* RESPONSIVO */
+        @media (max-width: 768px) {
+            .titulo { font-size: 2em; }
+            .subtitulo { font-size: 1.2em; }
+            .fruta { width: 80px; height: 80px; font-size: 1.5em; }
+            .galeria-fotos { grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); }
+            .form-container { padding: 20px; }
+            .mural-container { padding: 20px; }
+        }
+
+        @media (max-width: 480px) {
+            .galeria-frutas { gap: 15px; }
+            .fruta { width: 60px; height: 60px; font-size: 1.2em; }
+            .galeria-fotos { grid-template-columns: 1fr; }
+            .admin-btn { padding: 10px 15px; font-size: 0.9em; }
+        }
+    </style>
+</head>
+<body>
+    <!-- PAINEL ADMIN -->
+    <div class="admin-panel">
+        <button class="admin-btn" onclick="abrirAdmin()">🔧 Admin</button>
+    </div>
+
+    <!-- MODAL ADMIN -->
+    <div class="admin-modal" id="adminModal">
+        <div class="admin-content">
+            <button class="modal-fechar" onclick="fecharAdmin()">×</button>
+            <h2 style="color: var(--rosa); margin-bottom: 30px;">🔧 Painel de Administração</h2>
+            
+            <div class="admin-senha">
+                <input type="password" id="adminSenha" placeholder="Digite a senha de admin" class="form-input">
+                <button onclick="verificarSenha()" class="btn" style="margin-top: 10px;">Entrar</button>
+            </div>
+
+            <div id="adminConteudo" style="display: none;">
+                <div class="admin-section">
+                    <h3>📝 Gerenciar Mensagens ({mensagens.length})</h3>
+                    <div id="listaMensagens"></div>
+                </div>
+                
+                <div class="admin-section">
+                    <h3>📸 Gerenciar Fotos ({fotos.length})</h3>
+                    <div id="listaFotos"></div>
+                </div>
+                
+                <div class="admin-section">
+                    <h3>⚙️ Configurações</h3>
+                    <button onclick="exportarDados()" class="btn" style="margin-bottom: 10px;">📥 Exportar Dados</button>
+                    <button onclick="resetarSistema()" class="btn-excluir">🗑️ Resetar Tudo</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- CABEÇALHO -->
+    <header class="cabecalho">
+        <h1 class="titulo">💖 Professora Winnie</h1>
+        <p class="subtitulo">Homenagem Especial do</p>
+        <div class="badge-turma">9º ANO B - 2025</div>
+        <p class="subtitulo">Uma árvore de amor e gratidão</p>
+    </header>
+
+    <!-- ÁRVORE DE MENSAGENS -->
+    <section class="arvore-container">
+        <h2 class="arvore-titulo">🌳 Árvore das Mensagens</h2>
+        <p style="margin-bottom: 20px; font-size: 1.1em;">Clique em uma fruta para ver a mensagem e foto!</p>
+        <div class="galeria-frutas" id="galeriaFrutas">
+            <!-- Frutas serão adicionadas aqui automaticamente -->
+        </div>
+    </section>
+
+    <!-- MURAL DE FOTOS -->
+    <section class="mural-container">
+        <h2 class="mural-titulo">📸 Mural de Fotos</h2>
+        <div class="galeria-fotos" id="galeriaFotos">
+            <!-- Fotos serão adicionadas aqui -->
+        </div>
+        
+        <!-- Formulário para fotos -->
+        <div style="background: var(--cinza); padding: 30px; border-radius: 15px; margin-top: 40px;">
+            <h3 style="color: var(--rosa); margin-bottom: 20px;">➕ Adicionar Foto ao Mural</h3>
+            
+            <div class="form-group">
+                <label class="form-label">Seu Nome:</label>
+                <input type="text" id="nomeFoto" class="form-input" placeholder="Digite seu nome">
+            </div>
+            
+            <div class="form-group">
+                <label class="form-label">Foto:</label>
+                <div class="upload-area" onclick="document.getElementById('uploadFoto').click()">
+                    <div style="font-size: 4em; color: var(--azul); margin-bottom: 15px;">📷</div>
+                    <h3 style="color: var(--azul); margin-bottom: 10px;">Clique para escolher uma foto</h3>
+                    <p style="color: #666;">Formato: JPG, PNG, GIF (Máx: 5MB)</p>
+                </div>
+                <input type="file" id="uploadFoto" accept="image/*" style="display: none;">
+                <div id="previewContainer" style="display: none; margin-top: 20px; text-align: center;">
+                    <h4>Pré-visualização:</h4>
+                    <img id="previewImage" src="" alt="Preview" style="max-width: 200px; border-radius: 10px; margin-top: 10px;">
+                </div>
+            </div>
+            
+            <button onclick="adicionarFotoMural()" class="btn">📤 Adicionar Foto ao Mural</button>
+        </div>
+    </section>
+
+    <!-- FORMULÁRIO DE MENSAGEM -->
+    <section class="form-container">
+        <h2 class="form-titulo">💌 Deixe sua Mensagem para a Professora</h2>
+        
+        <div class="form-group">
+            <label class="form-label">Seu Nome:</label>
+            <input type="text" id="nomeAluno" class="form-input" placeholder="Digite seu nome completo" required>
+        </div>
+        
+        <div class="form-group">
+            <label class="form-label">Sua Foto (opcional - aparecerá na fruta):</label>
+            <div class="upload-area" onclick="document.getElementById('fotoAluno').click()">
+                <div style="font-size: 4em; color: var(--rosa); margin-bottom: 15px;">📸</div>
+                <p style="color: var(--rosa); margin-bottom: 10px;">Clique para adicionar sua foto</p>
+                <p style="color: #666;">Sua foto aparecerá na fruta da árvore</p>
+            </div>
+            <input type="file" id="fotoAluno" accept="image/*" style="display: none;">
+            <div id="fotoPreviewContainer" style="display: none; margin-top: 20px; text-align: center;">
+                <h4>Sua Foto:</h4>
+                <img id="fotoPreview" src="" alt="Sua foto" style="width: 100px; height: 100px; border-radius: 50%; object-fit: cover; margin-top: 10px;">
+            </div>
+        </div>
+        
+        <div class="form-group">
+            <label class="form-label">Sua Mensagem:</label>
+            <textarea id="mensagemAluno" class="form-input" rows="6" 
+                      placeholder="Escreva sua mensagem especial para a professora Winnie..." required></textarea>
+        </div>
+        
+        <button onclick="enviarMensagem()" class="btn">🌳 Adicionar Minha Mensagem à Árvore</button>
+        
+        <!-- Mensagem de sucesso -->
+        <div id="mensagemSucesso" class="mensagem-sucesso">
+            <h3>🎉 Mensagem Adicionada!</h3>
+            <p>Sua mensagem foi adicionada à árvore e TODOS podem ver!</p>
+            <p>Atualize a página para ver sua fruta na árvore.</p>
+        </div>
+    </section>
+
+    <!-- CRÉDITO -->
+    <div class="credito">
+        <p>Desenvolvido por Peixoto | 9º Ano B 2025</p>
+        <p>Para nossa querida Professora Winnie com ❤️</p>
+    </div>
+
+    <!-- MODAL DA MENSAGEM -->
+    <div class="modal" id="modalMensagem">
+        <div class="modal-content">
+            <button class="modal-fechar" onclick="fecharModal()">×</button>
+            <div id="conteudoModal"></div>
+        </div>
+    </div>
+
+    <script>
+        // SISTEMA PRINCIPAL - TODOS VEEM AS MESMAS COISAS!
+        let mensagens = [];
+        let fotos = [];
+        let frutas = [];
+        let proximaFruta = 0;
+        let adminAtivo = false;
+        const SENHA_ADMIN = "admin123";
+
+        // INICIALIZAR
+        function inicializar() {
+            carregarDados();
+            criarFrutas();
+            configurarUploads();
+            
+            // Adicionar mensagem da turma se não existir
+            if (mensagens.length === 0) {
+                adicionarMensagemTurma();
+            }
+            
+            // Mostrar frutas existentes
+            atualizarTodasFrutas();
+        }
+
+        // CRIAR FRUTAS VAZIAS
+        function criarFrutas() {
+            const container = document.getElementById('galeriaFrutas');
+            container.innerHTML = '';
+            
+            for (let i = 0; i < 100; i++) {
+                const fruta = document.createElement('div');
+                fruta.className = 'fruta fruta-vazia';
+                fruta.innerHTML = '?';
+                fruta.onclick = () => {
+                    if (mensagens[i]) {
+                        mostrarMensagem(i);
+                    }
+                };
+                container.appendChild(fruta);
+                frutas[i] = fruta;
+            }
+        }
+
+        // ATUALIZAR TODAS AS FRUTAS
+        function atualizarTodasFrutas() {
+            mensagens.forEach((msg, index) => {
+                if (msg) {
+                    atualizarFruta(index, msg);
+                }
+            });
+            
+            proximaFruta = mensagens.length;
+        }
+
+        // ATUALIZAR UMA FRUTA ESPECÍFICA
+        function atualizarFruta(index, mensagem) {
+            const fruta = frutas[index];
+            if (!fruta) return;
+            
+            const iniciais = mensagem.nome
+                .split(' ')
+                .map(palavra => palavra[0])
+                .join('')
+                .toUpperCase()
+                .substring(0, 2);
+            
+            if (mensagem.foto) {
+                fruta.className = 'fruta fruta-com-foto';
+                fruta.style.backgroundImage = `url(${mensagem.foto})`;
+                fruta.innerHTML = iniciais;
+                fruta.style.color = 'white';
+                fruta.style.textShadow = '0 2px 5px rgba(0,0,0,0.8)';
+            } else {
+                fruta.className = 'fruta';
+                fruta.style.background = getCorAleatoria();
+                fruta.innerHTML = iniciais;
+                fruta.style.backgroundImage = 'none';
+            }
+            
+            fruta.title = `Mensagem de ${mensagem.nome}`;
+        }
+
+        function getCorAleatoria() {
+            const cores = [
+                'linear-gradient(135deg, #ff4d8d, #ff80ab)',
+                'linear-gradient(135deg, #4d8cff, #80b3ff)',
+                'linear-gradient(135deg, #4CAF50, #81C784)',
+                'linear-gradient(135deg, #FFD700, #FFEB3B)',
+                'linear-gradient(135deg, #FF9800, #FFB74D)'
+            ];
+            return cores[Math.floor(Math.random() * cores.length)];
+        }
+
+        // ADICIONAR MENSAGEM DA TURMA
+        function adicionarMensagemTurma() {
+            const mensagemTurma = {
+                nome: "Turma 9º B",
+                mensagem: "Querida Professora Winnie, você foi muito mais que uma professora para nós. Obrigado por cada ensinamento, cada sorriso e cada momento especial. Levaremos você para sempre em nossos corações! Com todo amor, sua turma do 9º ano B 2025.",
+                foto: null,
+                data: new Date().toLocaleDateString('pt-BR'),
+                hora: new Date().toLocaleTimeString('pt-BR', {hour: '2-digit', minute: '2-digit'})
+            };
+            
+            mensagens[0] = mensagemTurma;
+            atualizarFruta(0, mensagemTurma);
+            salvarDados();
+        }
+
+        // CONFIGURAR UPLOADS DE FOTO
+        function configurarUploads() {
+            // Foto da mensagem
+            document.getElementById('fotoAluno').addEventListener('change', function(e) {
+                const file = e.target.files[0];
+                if (file) {
+                    const reader = new FileReader();
+                    reader.onload = function(e) {
+                        document.getElementById('fotoPreview').src = e.target.result;
+                        document.getElementById('fotoPreviewContainer').style.display = 'block';
+                    };
+                    reader.readAsDataURL(file);
+                }
+            });
+            
+            // Foto do mural
+            document.getElementById('uploadFoto').addEventListener('change', function(e) {
+                const file = e.target.files[0];
+                if (file) {
+                    const reader = new FileReader();
+                    reader.onload = function(e) {
+                        document.getElementById('previewImage').src = e.target.result;
+                        document.getElementById('previewContainer').style.display = 'block';
+                    };
+                    reader.readAsDataURL(file);
+                }
+            });
+        }
+
+        // ENVIAR MENSAGEM (ORDEM DE CHEGADA!)
+        function enviarMensagem() {
+            const nome = document.getElementById('nomeAluno').value.trim();
+            const mensagemTexto = document.getElementById('mensagemAluno').value.trim();
+            const fotoInput = document.getElementById('fotoAluno');
+            
+            if (!nome || nome.length < 2) {
+                alert('Por favor, digite seu nome!');
+                return;
+            }
+            
+            if (!mensagemTexto || mensagemTexto.length < 10) {
+                alert('Escreva uma mensagem com pelo menos 10 caracteres!');
+                return;
+            }
+            
+            if (proximaFruta >= 100) {
+                alert('A árvore está cheia de amor! ❤️');
+                return;
+            }
+            
+            const novaMensagem = {
+                nome: nome,
+                mensagem: mensagemTexto,
+                foto: null,
+                data: new Date().toLocaleDateString('pt-BR'),
+                hora: new Date().toLocaleTimeString('pt-BR', {hour: '2-digit', minute: '2-digit'})
+            };
+            
+            if (fotoInput.files[0]) {
+                const file = fotoInput.files[0];
+                if (!file.type.startsWith('image/')) {
+                    alert('Por favor, selecione apenas imagens!');
+                    return;
+                }
+                
+                if (file.size > 5 * 1024 * 1024) {
+                    alert('Imagem muito grande! Máximo: 5MB');
+                    return;
+                }
+                
+                const reader = new FileReader();
+                reader.onload = function(e) {
+                    novaMensagem.foto = e.target.result;
+                    finalizarEnvioMensagem(novaMensagem);
+                };
+                reader.readAsDataURL(file);
+            } else {
+                finalizarEnvioMensagem(novaMensagem);
+            }
+        }
+
+        function finalizarEnvioMensagem(mensagem) {
+            mensagens[proximaFruta] = mensagem;
+            atualizarFruta(proximaFruta, mensagem);
+            proximaFruta++;
+            
+            document.getElementById('nomeAluno').value = '';
+            document.getElementById('mensagemAluno').value = '';
+            document.getElementById('fotoAluno').value = '';
+            document.getElementById('fotoPreviewContainer').style.display = 'none';
+            
+            salvarDados();
+            
+            document.getElementById('mensagemSucesso').classList.add('mostrar');
+            document.getElementById('mensagemSucesso').scrollIntoView({ behavior: 'smooth' });
+            
+            setTimeout(() => {
+                alert('✅ Sua mensagem foi adicionada! TODOS os alunos podem ver agora!');
+            }, 500);
+        }
+
+        // ADICIONAR FOTO AO MURAL
+        function adicionarFotoMural() {
+            const nome = document.getElementById('nomeFoto').value.trim() || 'Anônimo';
+            const input = document.getElementById('uploadFoto');
+            
+            if (!input.files[0]) {
+                alert('Por favor, selecione uma foto!');
+                return;
+            }
+            
+            const file = input.files[0];
+            
+            if (!file.type.startsWith('image/')) {
+                alert('Por favor, selecione apenas imagens!');
+                return;
+            }
+            
+            if (file.size > 5 * 1024 * 1024) {
+                alert('Imagem muito grande! Máximo: 5MB');
+                return;
+            }
+            
+            const reader = new FileReader();
+            reader.onload = function(e) {
+                const novaFoto = {
+                    id: Date.now(),
+                    url: e.target.result,
+                    nome: nome,
+                    data: new Date().toLocaleDateString('pt-BR')
+                };
+                
+                fotos.push(novaFoto);
+                adicionarFotoNaGaleria(novaFoto);
+                salvarDados();
+                
+                document.getElementById('nomeFoto').value = '';
+                input.value = '';
+                document.getElementById('previewContainer').style.display = 'none';
+                
+                alert('✅ Foto adicionada ao mural! TODOS podem ver agora!');
+                
+                setTimeout(() => {
+                    window.scrollTo({top: document.querySelector('.mural-container').offsetTop, behavior: 'smooth'});
+                }, 1000);
+            };
+            reader.readAsDataURL(file);
+        }
+
+        function adicionarFotoNaGaleria(foto) {
+            const galeria = document.getElementById('galeriaFotos');
+            
+            const item = document.createElement('div');
+            item.className = 'foto-item';
+            item.dataset.id = foto.id;
+            
+            item.innerHTML = `
+                <img src="${foto.url}" alt="Foto de ${foto.nome}" loading="lazy">
+                <div class="foto-info">
+                    <strong>${foto.nome}</strong>
+                    <p style="color: #666; margin-top: 5px;">📅 ${foto.data}</p>
+                </div>
+            `;
+            
+            galeria.appendChild(item);
+        }
+
+        // MOSTRAR MENSAGEM COMPLETA
+        function mostrarMensagem(index) {
+            const mensagem = mensagens[index];
+            if (!mensagem) return;
+            
+            let fotoHTML = '';
+            if (mensagem.foto) {
+                fotoHTML = `
+                    <div style="text-align: center; margin: 20px 0;">
+                        <img src="${mensagem.foto}" alt="Foto de ${mensagem.nome}" style="
+                            width: 150px;
+                            height: 150px;
+                            border-radius: 50%;
+                            object-fit: cover;
+                            border: 5px solid var(--rosa);
+                        ">
+                    </div>
+                `;
+            }
+            
+            document.getElementById('conteudoModal').innerHTML = `
+                ${fotoHTML}
+                <h2 style="color: var(--rosa); margin-bottom: 20px;">${mensagem.nome}</h2>
+                <div style="
+                    background: var(--cinza);
+                    padding: 25px;
+                    border-radius: 15px;
+                    margin-bottom: 20px;
+                    line-height: 1.8;
+                ">
+                    ${mensagem.mensagem}
+                </div>
+                <p style="color: #666;">
+                    📅 ${mensagem.data}
+                    ${mensagem.hora ? ` • ⏰ ${mensagem.hora}` : ''}
+                </p>
+            `;
+            
+            document.getElementById('modalMensagem').style.display = 'flex';
+        }
+
+        function fecharModal() {
+            document.getElementById('modalMensagem').style.display = 'none';
+        }
+
+        // PAINEL ADMIN
+        function abrirAdmin() {
+            document.getElementById('adminModal').style.display = 'flex';
+        }
+
+        function fecharAdmin() {
+            document.getElementById('adminModal').style.display = 'none';
+            document.getElementById('adminConteudo').style.display = 'none';
+            document.getElementById('adminSenha').value = '';
+        }
+
+        function verificarSenha() {
+            const senha = document.getElementById('adminSenha').value;
+            
+            if (senha === SENHA_ADMIN) {
+                adminAtivo = true;
+                document.getElementById('adminConteudo').style.display = 'block';
+                carregarListaAdmin();
+            } else {
+                alert('Senha incorreta! A senha é: admin123');
+            }
+        }
+
+        function carregarListaAdmin() {
+            if (!adminAtivo) return;
+            
+            // Atualizar contadores no título
+            document.querySelectorAll('.admin-section h3').forEach(h3 => {
+                if (h3.textContent.includes('Mensagens')) {
+                    h3.innerHTML = h3.innerHTML.replace(/\{\d+\}/, `(${mensagens.filter(m => m).length})`);
+                }
+                if (h3.textContent.includes('Fotos')) {
+                    h3.innerHTML = h3.innerHTML.replace(/\{\d+\}/, `(${fotos.length})`);
+                }
+            });
+            
+            // Listar mensagens
+            let mensagensHTML = '';
+            mensagens.forEach((msg, index) => {
+                if (msg) {
+                    mensagensHTML += `
+                        <div style="background: white; padding: 15px; margin: 10px 0; border-radius: 8px;">
+                            <div style="display: flex; justify-content: space-between; align-items: center;">
+                                <div style="flex: 1;">
+                                    <strong>Fruta ${index}: ${msg.nome}</strong>
+                                    <p style="color: #666; margin-top: 5px; font-size: 0.9em;">
+                                        ${msg.mensagem.substring(0, 100)}...
+                                    </p>
+                                    <p style="color: #999; font-size: 0.8em; margin-top: 5px;">
+                                        📅 ${msg.data} ${msg.hora ? `• ⏰ ${msg.hora}` : ''}
+                                    </p>
+                                </div>
+                                <button onclick="excluirMensagem(${index})" class="btn-excluir">
+                                    🗑️
+                                </button>
+                            </div>
+                        </div>
+                    `;
+                }
+            });
+            
+            document.getElementById('listaMensagens').innerHTML = 
+                mensagensHTML || '<p>Nenhuma mensagem cadastrada.</p>';
+            
+            // Listar fotos
+            let fotosHTML = '';
+            fotos.forEach((foto, index) => {
+                fotosHTML += `
+                    <div style="background: white; padding: 15px; margin: 10px 0; border-radius: 8px;">
+                        <div style="display: flex; justify-content: space-between; align-items: center;">
+                            <div style="display: flex; align-items: center; gap: 15px; flex: 1;">
+                                <img src="${foto.url}" alt="Foto" style="width: 60px; height: 60px; object-fit: cover; border-radius: 5px;">
+                                <div>
+                                    <strong>${foto.nome}</strong>
+                                    <p style="color: #999; font-size: 0.8em; margin-top: 2px;">📅 ${foto.data}</p>
+                                </div>
+                            </div>
+                            <button onclick="excluirFoto(${index})" class="btn-excluir">
+                                🗑️
+                            </button>
+                        </div>
+                    </div>
+                `;
+            });
+            
+            document.getElementById('listaFotos').innerHTML = 
+                fotosHTML || '<p>Nenhuma foto no mural.</p>';
+        }
+
+        function excluirMensagem(index) {
+            if (!adminAtivo || !confirm(`Tem certeza que deseja excluir a mensagem de "${mensagens[index].nome}"?`)) return;
+            
+            mensagens[index] = null;
+            frutas[index].className = 'fruta fruta-vazia';
+            frutas[index].innerHTML = '?';
+            frutas[index].title = '';
+            
+            salvarDados();
+            carregarListaAdmin();
+            alert('✅ Mensagem excluída!');
+        }
+
+        function excluirFoto(index) {
+            if (!adminAtivo || !confirm(`Tem certeza que deseja excluir a foto de "${fotos[index].nome}"?`)) return;
+            
+            fotos.splice(index, 1);
+            const galeria = document.getElementById('galeriaFotos');
+            galeria.innerHTML = '';
+            fotos.forEach(foto => adicionarFotoNaGaleria(foto));
+            
+            salvarDados();
+            carregarListaAdmin();
+            alert('✅ Foto excluída!');
+        }
+
+        function exportarDados() {
+            if (!adminAtivo) return;
+            
+            const dados = {
+                mensagens: mensagens.filter(m => m),
+                fotos: fotos,
+                totalMensagens: mensagens.filter(m => m).length,
+                totalFotos: fotos.length,
+                dataExportacao: new Date().toLocaleString('pt-BR')
+            };
+            
+            const blob = new Blob([JSON.stringify(dados, null, 2)], {type: 'application/json'});
+            const url = URL.createObjectURL(blob);
+            const a = document.createElement('a');
+            a.href = url;
+            a.download = `homenagem-winnie-${new Date().toISOString().split('T')[0]}.json`;
+            document.body.appendChild(a);
+            a.click();
+            document.body.removeChild(a);
+            URL.revokeObjectURL(url);
+            
+            alert('✅ Dados exportados com sucesso!');
+        }
+
+        function resetarSistema() {
+            if (!adminAtivo || !confirm('⚠️ ATENÇÃO: Isso irá apagar TODAS as mensagens e fotos. Tem certeza?')) return;
+            
+            mensagens = [];
+            fotos = [];
+            criarFrutas();
+            adicionarMensagemTurma();
+            salvarDados();
+            carregarListaAdmin();
+            alert('✅ Sistema resetado com sucesso! Apenas a mensagem da turma permanece.');
+        }
+
+        // SALVAR E CARREGAR DADOS
+        function salvarDados() {
+            const dados = {
+                mensagens: mensagens,
+                fotos: fotos,
+                proximaFruta: proximaFruta,
+                dataSalvamento: new Date().toISOString()
+            };
+            localStorage.setItem('homenagemWinnieTurma', JSON.stringify(dados));
+            
+            // Sincronizar entre abas/navegadores
+            if (typeof BroadcastChannel !== 'undefined') {
+                const channel = new BroadcastChannel('homenagem-winnie');
+                channel.postMessage({type: 'dadosAtualizados'});
+            }
+        }
+
+        function carregarDados() {
+            const dadosSalvos = localStorage.getItem('homenagemWinnieTurma');
+            if (dadosSalvos) {
+                const dados = JSON.parse(dadosSalvos);
+                mensagens = dados.mensagens || [];
+                fotos = dados.fotos || [];
+                proximaFruta = dados.proximaFruta || mensagens.length;
+                
+                const galeria = document.getElementById('galeriaFotos');
+                galeria.innerHTML = '';
+                fotos.forEach(foto => adicionarFotoNaGaleria(foto));
+            }
+            
+            // Ouvir atualizações
+            if (typeof BroadcastChannel !== 'undefined') {
+                const channel = new BroadcastChannel('homenagem-winnie');
+                channel.onmessage = function(event) {
+                    if (event.data.type === 'dadosAtualizados') {
+                        location.reload();
+                    }
+                };
+            }
+        }
+
+        function configurarEventos() {
+            document.getElementById('modalMensagem').addEventListener('click', function(e) {
+                if (e.target === this) fecharModal();
+            });
+            
+            document.getElementById('adminModal').addEventListener('click', function(e) {
+                if (e.target === this) fecharAdmin();
+            });
+            
+            document.addEventListener('keydown', function(e) {
+                if (e.key === 'Escape') {
+                    fecharModal();
+                    fecharAdmin();
+                }
+            });
+        }
+
+        // INICIAR SISTEMA
+        document.addEventListener('DOMContentLoaded', inicializar);
+    </script>
+</body>
+</html>
